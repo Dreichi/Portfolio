@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #A7A7A7;
+}
+
+li, a, button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+img {
+	max-width: 15%;
+	height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 1%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: 12%;
+}
+
+.icon {
+    padding: 0px 10px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    display: block;
+}
+
+.nav__links li a:hover {
+    color: #C490FF
+}
+
+.nav__links li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.nav__links .icon {
+  display: none;
+}
+
+button {
+    padding: 9px 25px;
+    margin-right: 80px;
+    background-color: rgb(255, 52, 245,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(255, 52, 245,0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .nav__links li:not(:first-child) {display: none;}
+  .nav__links a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav__links.responsive {position: relative;}
+  .nav__links.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav__links.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
