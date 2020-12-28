@@ -1,0 +1,30 @@
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            var y = document.getElementsByClassName("logo");
+            if (x.className === "nav__links") {
+                y[0].className += " responsive";
+                x.className += " responsive";
+            } else {
+                x.className = "nav__links";
+                y[0].className = "logo";
+            }
+        }
+    </script> 
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <nav>
+            <ul class="nav__links" id="myNavbar">
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </li>
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="projets">Projets</a></li>
+                <li><a routerLink="skills">Skills</a></li>
+                <li><a routerLink="about">About</a></li>
+            </ul>
+        </nav>
+        <img class="logo" src="assets/portfolio.png" alt="logo">
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+    <router-outlet></router-outlet>

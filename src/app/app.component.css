@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button, i {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    background-color:#ff80d9;
+}
+
+img {
+	max-width: 10%;
+	height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 1%;
+    background-color:#ff80d9;
+}
+
+header nav {
+    background-color:#ff80d9;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: 5%;
+    background-color:#ff80d9;
+}
+
+.icon {
+    padding: 0px 10px;
+}
+
+.nav__links {
+    list-style: none;
+    background-color:#ff80d9;
+}
+
+.nav__links i {
+    display: block;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    display: block;
+    background-color:#ff80d9;
+}
+
+.nav__links li a:hover {
+    color: #C490FF;
+}
+
+.nav__links li a.active {
+  background-color:#ff80d9;
+  color: white;
+}
+
+.nav__links .icon {
+  display: none;
+  background-color:#ff80d9;
+}
+
+button {
+    padding: 10px 40px;
+    margin-right: 20px;
+    background-color: rgb(255, 52, 245,1);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(139, 0, 133, 0.8);
+}
+
+@media screen and (max-width: 720px) {
+  .nav__links li:not(:first-child) {margin-left: -200%; display: block; height: 1px;}
+  .nav__links a.icon {
+    float: right;
+    display: block;
+  }
+  header {
+      padding-left: 0px;
+  }
+  img {
+	max-width: 30%;
+	height: auto;
+    }
+    button {
+    padding: 9px 20px;
+    margin-right: 10px;
+    background-color: rgb(255, 52, 245,1);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer; 
+    transition: all 0.1s ease 0s;
+    }
+}
+
+@media screen and (max-width: 720px) {
+  .nav__links.responsive {position: absolute;
+    height: 100%;
+    width: 30%;
+    margin-top: 12%;
+  }
+  .nav__links.responsive li:first-child {
+    position: absolute;
+    left: 0;
+    top: -10%;
+  }
+  .nav__links.responsive li {
+    float: left;
+    transition: all 1s ease 0s;
+    display: block;
+    margin-left: 0%;
+    margin-top: 1.7rem;
+    text-align: center;
+  }
+  .logo.responsive {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-left: 22%;
+    background-color:#ff80d9;
+  }
+}
