@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-li, a, button, i {
+li, a, button, fa-icon {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -34,7 +34,7 @@ header nav {
 
 .logo {
     cursor: pointer;
-    margin-right: 5%;
+    margin-right: 13%;
     background-color:#ff80d9;
 }
 
@@ -47,8 +47,8 @@ header nav {
     background-color:#ff80d9;
 }
 
-.nav__links i {
-    display: block;
+.nav__links fa-icon {
+    display: none;
 }
 
 .nav__links li {
@@ -92,7 +92,7 @@ button:hover {
 
 @media screen and (max-width: 720px) {
   .nav__links li:not(:first-child) {margin-left: -200%; display: block; height: 1px;}
-  .nav__links a.icon {
+  .nav__links fa-icon {
     float: right;
     display: block;
   }
