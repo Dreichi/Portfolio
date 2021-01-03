@@ -13,7 +13,7 @@ li, a, button, .nav-link {
     font-size: 20px;
     color: #edf0f1;
     text-decoration: none;
-    background-color:#ff80d9;
+    background-color:#ff2ec0;
     text-align: center;
 }
 
@@ -23,14 +23,14 @@ li, a, button, .nav-link {
 
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color:#ff4fca;
+    color:#da4fb0;
 }
 
 header {
     display: flex;
     align-items: center;
     padding: 20px 1%;
-    background-color:#ff80d9;
+    background-color: #ff2ec0;
     justify-content: space-between;
 }
 
@@ -49,7 +49,7 @@ header nav {
 .cta {
     padding: 10px 40px;
     margin-right: 20px;
-    background-color: rgb(255, 52, 245,1);
+    background-color: rgb(201, 0, 191);
     border: none;
     border-radius: 100px;
     cursor: pointer; 
@@ -57,7 +57,7 @@ header nav {
 }
 
 .cta:hover {
-    background-color: rgba(139, 0, 133, 0.8);
+    background-color: rgba(87, 0, 82, 0.8);
 }
 
 .navbar-toggler:focus {
