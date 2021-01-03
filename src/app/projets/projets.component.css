@@ -1,9 +1,11 @@
 .img-projets img {
     width: 100%;
-    height: 83.2%;
+    height: auto;
     object-position: center;
-    background-size: cover;
+    background-image: none;
+    background-repeat: repeat;
 }
+
 
 * {
   margin: 0;
@@ -12,16 +14,22 @@
     font-weight: 500;
 }
 
+.projets h1 {
+  position: relative;
+  text-align: center;
+  font-size: 50px
+}
+
 .projets {
     position: absolute;
     top: 18%;
     color: #edf0f1;
     text-decoration: none;
+    margin: 50px
 }
 
 .projets h2 {
   color: #0a4870;
-  margin-left: -60%;
   font-weight: 500;
 }
 
@@ -33,12 +41,12 @@ ul {
 }
 .projets ul .booking-card {
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 411px;
+  height: 600px;
   display: flex;
-  flex: 0 0 300px;
+  flex: auto;
   flex-direction: column;
-  margin: 20px;
+  margin: 15px;
   margin-bottom: 30px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -49,6 +57,7 @@ ul {
   text-align: center;
   color: #0a4870;
   transition: 0.3s;
+  font-size: 20px;
 }
 .projets ul .booking-card::before {
   content: "";
@@ -61,7 +70,7 @@ ul {
   transition: 0.3s;
 }
 .projets ul .booking-card .book-container {
-  height: 200px;
+  height: 250px;
 }
 .projets ul .booking-card .book-container .content {
   position: relative;
@@ -79,6 +88,10 @@ ul {
   padding: 10px 15px;
   background: none;
   text-transform: uppercase;
+  border-top-left-radius : 50px 50px;
+    border-top-right-radius : 50px 50px;
+    border-bottom-left-radius : 50px 50px;
+    border-bottom-right-radius : 50px 50px;
   font-weight: bold;
   font-size: 1.3em;
   color: white;
@@ -142,16 +155,10 @@ ul {
   font-weight: bold;
   font-size: 0.9em;
 }
-.projets ul .booking-card .informations-container .more-information .info-and-date-container .box .icon {
-  margin-bottom: 5px;
-}
-.projets ul .booking-card .informations-container .more-information .info-and-date-container .box.info {
-  color: #ec992c;
-  margin-right: 10px;
-}
+
 .projets ul .booking-card .informations-container .more-information .disclaimer {
   margin-top: 20px;
-  font-size: 0.8em;
+  font-size: 1.2em;
   color: #7d7d7d;
 }
 .projets ul .booking-card:hover::before {
