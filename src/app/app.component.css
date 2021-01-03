@@ -6,26 +6,32 @@
     padding: 0;
 }
 
-li, a, button, fa-icon {
+
+li, a, button, .nav-link {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #edf0f1;
     text-decoration: none;
     background-color:#ff80d9;
+    text-align: center;
 }
 
-img {
-	max-width: 10%;
-	height: auto;
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color:#ff4fca;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px 1%;
+    padding: 20px 1%;
     background-color:#ff80d9;
+    justify-content: space-between;
 }
 
 header nav {
@@ -33,50 +39,14 @@ header nav {
 }
 
 .logo {
+    position: relative;
     cursor: pointer;
-    margin-right: 13%;
-    background-color:#ff80d9;
+    margin-right: 5%;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.icon {
-    padding: 0px 10px;
-}
-
-.nav__links {
-    list-style: none;
-    background-color:#ff80d9;
-}
-
-.nav__links fa-icon {
-    display: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 10px;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    display: block;
-    background-color:#ff80d9;
-}
-
-.nav__links li a:hover {
-    color: #C490FF;
-}
-
-.nav__links li a.active {
-  background-color:#ff80d9;
-  color: white;
-}
-
-.nav__links .icon {
-  display: none;
-  background-color:#ff80d9;
-}
-
-button {
+.cta {
     padding: 10px 40px;
     margin-right: 20px;
     background-color: rgb(255, 52, 245,1);
@@ -86,57 +56,14 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.cta:hover {
     background-color: rgba(139, 0, 133, 0.8);
 }
 
-@media screen and (max-width: 720px) {
-  .nav__links li:not(:first-child) {margin-left: -200%; display: block; height: 1px;}
-  .nav__links fa-icon {
-    float: right;
-    display: block;
-  }
-  header {
-      padding-left: 0px;
-  }
-  img {
-	max-width: 30%;
-	height: auto;
-    }
-    button {
-    padding: 9px 20px;
-    margin-right: 10px;
-    background-color: rgb(255, 52, 245,1);
-    border: none;
-    border-radius: 100px;
-    cursor: pointer; 
-    transition: all 0.1s ease 0s;
-    }
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
-@media screen and (max-width: 720px) {
-  .nav__links.responsive {position: absolute;
-    height: 100%;
-    width: 30%;
-    margin-top: 12%;
-  }
-  .nav__links.responsive li:first-child {
-    position: absolute;
-    left: 0;
-    top: -10%;
-  }
-  .nav__links.responsive li {
-    float: left;
-    transition: all 1s ease 0s;
-    display: block;
-    margin-left: 0%;
-    margin-top: 1.7rem;
-    text-align: center;
-  }
-  .logo.responsive {
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    margin-left: 22%;
-    background-color:#ff80d9;
-  }
+.navbar-toggler {
+    margin: auto;
 }

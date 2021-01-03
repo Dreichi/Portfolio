@@ -6,6 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   project = 'Mon portfolio';
   faBars = faBars;

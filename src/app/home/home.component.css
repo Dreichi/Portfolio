@@ -5,12 +5,6 @@
     padding: 0;
 }
 
-.home img {
-    width: 100%;
-    height: 83.2%;
-    object-position: center;
-    background-size: cover;
-}
 
 .homecontent {
     position: absolute;
@@ -226,21 +220,6 @@ ul .booking-card:hover .informations-container .more-information {
   ul .booking-card .informations-container .more-information {
     opacity: 1;
   }
-}
-.credits {
-  display: table;
-  background: #0a4870;
-  color: white;
-  line-height: 25px;
-  margin: 10px auto;
-  padding: 20px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-align: center;
-}
-.credits a {
-  color: #e3ebf1;
 }
 
 h1 {

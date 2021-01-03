@@ -1,28 +1,29 @@
-<script>
-    function myFunction() {
-        var x = document.getElementById("myNavbar");
-        var y = document.getElementsByClassName("logo");
-        if (x.className === "nav__links") {
-            y[0].className += " responsive";
-            x.className += " responsive";
-        } else {
-            x.className = "nav__links";
-            y[0].className = "logo";
-        }
-    }
-</script>
 <header>
-    <nav>
-        <ul class="nav__links" id="myNavbar">
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><fa-icon [icon]="faBars"></fa-icon></a>
-            </li>
-            <li><a routerLink="">Home</a></li>
-            <li><a routerLink="projets">Projets</a></li>
-            <li><a routerLink="skills">Skills</a></li>
-            <li><a routerLink="about">About</a></li>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <fa-icon [icon]="faBars"></fa-icon> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="projets" href="#">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="skills" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" href="#">About</a>
+          </li>
         </ul>
-    </nav>
-    <img class="logo" src="assets/portfolio.png" alt="logo">
-    <a class="cta" href="#"><button>Contact</button></a>
+      </div>
+    </div>
+  </nav>
+  <a class="logo" href="#">Mon Portfolio</a>
+  <a class="cta" href="#">Contact</a>
 </header>
 <router-outlet></router-outlet>

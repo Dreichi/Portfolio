@@ -6,53 +6,7 @@
     padding: 0;
 }
 
-@media screen and (max-width: 720px) {
-  .nav__links li:not(:first-child) {margin-left: -200%; display: block; height: 1px;}
-  .nav__links a.icon {
-    float: right;
-    display: block;
-  }
-  header {
-      padding-left: 0px;
-  }
-  img {
-	max-width: 30%;
-	height: auto;
-    }
-    button {
-    padding: 9px 20px;
-    margin-right: 10px;
-    background-color: rgb(255, 52, 245,1);
-    border: none;
-    border-radius: 100px;
-    cursor: pointer; 
-    transition: all 0.1s ease 0s;
-    }
-}
-
-@media screen and (max-width: 720px) {
-  .nav__links.responsive {position: absolute;
-    height: 100%;
-    width: 30%;
-    margin-top: 12%;
-  }
-  .nav__links.responsive li:first-child {
-    position: absolute;
-    left: 0;
-    top: -10%;
-  }
-  .nav__links.responsive li {
-    float: left;
-    transition: all 1s ease 0s;
-    display: block;
-    margin-left: 0%;
-    margin-top: 1.7rem;
-    text-align: center;
-  }
-  .logo.responsive {
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    margin-left: 22%;
-    background-color:#ff80d9;
-  }
+body {
+  background: rgb(255,128,217);
+  background: linear-gradient(180deg, rgba(255,128,217,1) 0%, rgba(255,0,236,1) 35%, rgba(255,15,187,1) 70%, rgba(135,0,76,1) 100%);
 }
