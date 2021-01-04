@@ -24,16 +24,28 @@
   font-weight: 500;
 }
 
+.language {
+  position: relative;
+  top: 9px;
+  border: 1px solid rgb(255, 128, 217, 0.44) ;
+  background-color: rgb(255, 128, 217, 0.44) ;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 .projets ul .booking-card {
   position: relative;
-  width: 411px;
-  height: 600px;
+  max-width: 411px;
+  min-height: 600px;
   display: flex;
   flex: auto;
   flex-direction: column;
@@ -180,21 +192,6 @@ ul {
   ul .booking-card .informations-container .more-information {
     opacity: 1;
   }
-}
-.credits {
-  display: table;
-  background: #0a4870;
-  color: white;
-  line-height: 25px;
-  margin: 10px auto;
-  padding: 20px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-align: center;
-}
-.credits a {
-  color: #e3ebf1;
 }
 
 h1 {
