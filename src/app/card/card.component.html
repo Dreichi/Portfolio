@@ -1,0 +1,15 @@
+<li class="booking-card" style="background-image: url({{bkg}})">
+    <div class="book-container">
+        <div class="content">
+            <button class="btn">Voir le projet</button>
+        </div>
+    </div>
+    <div class="informations-container">
+        <h3 class="title">{{name}}</h3>
+        <p class="sub-title">{{lil_desc}}</p>
+        <span class="language" *ngFor="let language of languages">{{language}}</span>
+        <div class="more-information">
+            <p class="disclaimer">{{desc}}</p>
+        </div>
+    </div>
+</li>

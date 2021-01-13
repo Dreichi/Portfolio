@@ -9,6 +9,7 @@ import { ProjetsComponent } from './projets/projets.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     ProjetsComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    CardComponent
   ],
   imports: [
     FontAwesomeModule,
