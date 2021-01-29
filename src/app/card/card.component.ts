@@ -7,15 +7,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input() name:string;
+  @Input() name!:string;
 
-  @Input() lil_desc:string;
+  @Input() lil_desc!:string;
 
-  @Input() desc:string;
+  @Input() desc!:string;
 
-  @Input() bkg:string;
+  @Input() bkg!:string;
 
-  @Input() languages:string[];
+  @Input() languages!:string[];
 
   constructor() { }
 
