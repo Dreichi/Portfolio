@@ -15,6 +15,10 @@
     margin: 100px;
 }
 
+.homecontent span {
+  position: absolute;
+}
+
 .language {
   position: relative;
   top: 9px;
