@@ -6,6 +6,10 @@
 }
 
 
+h1 {
+  margin: 10px 20px;
+}
+
 .homecontent {
     position: absolute;
     top: 18%;
@@ -13,6 +17,7 @@
     color: #edf0f1;
     text-decoration: none;
     margin: 100px;
+  width: 40%;
 }
 
 .homecontent span {
@@ -58,7 +63,7 @@
     background-color: rgb(255, 52, 245,1);
     border: none;
     border-radius: 100px;
-    cursor: pointer; 
+    cursor: pointer;
     font-size: 20px;
     text-decoration: none;
     color: #edf0f1;
@@ -235,8 +240,4 @@ ul .booking-card:hover .informations-container .more-information {
   ul .booking-card .informations-container .more-information {
     opacity: 1;
   }
-}
-
-h1 {
-  margin: 10px 20px;
 }
