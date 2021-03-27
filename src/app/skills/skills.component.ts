@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-
+  src = '../assets/CV.pdf';
   constructor() { }
 
   ngOnInit(): void {

@@ -7,7 +7,8 @@
 
 
 h1 {
-  margin: 10px 20px;
+  margin: 10px -30px;
+  font-size: 50px;
 }
 
 .homecontent {
@@ -22,13 +23,14 @@ h1 {
 
 .homecontent span {
   position: absolute;
+  font-size: 40px;
 }
 
 .language {
   position: relative;
   top: 9px;
-  border: 1px solid rgb(255, 128, 217, 0.44) ;
-  background-color: rgb(255, 128, 217, 0.44) ;
+  border: 1px solid rgba(255, 128, 217, 0.44) ;
+  background-color: rgba(255, 128, 217, 0.44) ;
   border-radius: 10px;
   padding-left: 5px;
   padding-right: 5px;
@@ -45,7 +47,7 @@ h1 {
     border-top-right-radius : 50px 50px;
     border-bottom-left-radius : 50px 50px;
     border-bottom-right-radius : 50px 50px;
-    background-color:rgb(255, 128, 217, 0.44);
+    background-color:rgba(255, 128, 217, 0.44);
 }
 
 .display-project h1 {
@@ -60,7 +62,7 @@ h1 {
     margin-right: auto;
     margin-top: -2%;
     padding: 9px 20px;
-    background-color: rgb(255, 52, 245,1);
+    background-color: rgba(255, 52, 245, 1);
     border: none;
     border-radius: 100px;
     cursor: pointer;
@@ -145,7 +147,7 @@ ul .booking-card .book-container .content .btn {
 }
 ul .booking-card .book-container .content .btn:hover {
   background: white;
-  border: 0px solid white;
+  border: 0 solid white;
   color: #0a4870;
 }
 ul .booking-card .informations-container {

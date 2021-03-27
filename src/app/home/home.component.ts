@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-home',
@@ -12,4 +13,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+}
+export class MyAwesomeComponent {
+  private readonly notifier: NotifierService;
+
+  constructor(notifierService: NotifierService) {
+    this.notifier = notifierService;
+  }
 }
