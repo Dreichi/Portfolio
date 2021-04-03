@@ -35,7 +35,10 @@
             "scripts": []
           },
           "configurations": {
-            "production": {
+            "production": { 
+              "optimization": true,
+              "sourceMap" : false,
+              "buildOptimizer": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -57,8 +60,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
